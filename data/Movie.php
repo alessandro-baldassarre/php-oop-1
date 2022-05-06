@@ -7,6 +7,12 @@ class Movie
     protected $director_name;
     protected $duration; 
      
+    /**
+     * @param string movie title
+     * @param date movie release date
+     * @param string movie director
+     * @param string movie duration
+     */
     function __construct($title, $release_date, $director_name, $duration){
         $this->title = $title;
         $this->release_date = $release_date;
@@ -31,8 +37,6 @@ class Movie
         return $this->duration;
     }
 };
-
-
 
 
 ?>
